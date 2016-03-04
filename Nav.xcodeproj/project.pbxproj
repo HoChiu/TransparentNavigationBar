@@ -10,9 +10,9 @@
 		4E63426A1C89199B00F7B643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6342691C89199B00F7B643 /* main.m */; };
 		4E63426D1C89199B00F7B643 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E63426C1C89199B00F7B643 /* AppDelegate.m */; };
 		4E6342701C89199B00F7B643 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E63426F1C89199B00F7B643 /* ViewController.m */; };
-		4E6342731C89199B00F7B643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6342711C89199B00F7B643 /* Main.storyboard */; };
 		4E6342751C89199B00F7B643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6342741C89199B00F7B643 /* Assets.xcassets */; };
 		4E6342781C89199B00F7B643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6342761C89199B00F7B643 /* LaunchScreen.storyboard */; };
+		4E6342811C8919DB00F7B643 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6342801C8919DB00F7B643 /* NavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,11 @@
 		4E63426C1C89199B00F7B643 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4E63426E1C89199B00F7B643 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E63426F1C89199B00F7B643 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4E6342721C89199B00F7B643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E6342741C89199B00F7B643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E6342771C89199B00F7B643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E6342791C89199B00F7B643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E63427F1C8919DB00F7B643 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		4E6342801C8919DB00F7B643 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +63,8 @@
 				4E63426C1C89199B00F7B643 /* AppDelegate.m */,
 				4E63426E1C89199B00F7B643 /* ViewController.h */,
 				4E63426F1C89199B00F7B643 /* ViewController.m */,
-				4E6342711C89199B00F7B643 /* Main.storyboard */,
+				4E63427F1C8919DB00F7B643 /* NavViewController.h */,
+				4E6342801C8919DB00F7B643 /* NavViewController.m */,
 				4E6342741C89199B00F7B643 /* Assets.xcassets */,
 				4E6342761C89199B00F7B643 /* LaunchScreen.storyboard */,
 				4E6342791C89199B00F7B643 /* Info.plist */,
@@ -106,7 +108,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = weiying;
+				ORGANIZATIONNAME = Howe;
 				TargetAttributes = {
 					4E6342641C89199B00F7B643 = {
 						CreatedOnToolsVersion = 7.2;
@@ -138,7 +140,6 @@
 			files = (
 				4E6342781C89199B00F7B643 /* LaunchScreen.storyboard in Resources */,
 				4E6342751C89199B00F7B643 /* Assets.xcassets in Resources */,
-				4E6342731C89199B00F7B643 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +152,7 @@
 			files = (
 				4E6342701C89199B00F7B643 /* ViewController.m in Sources */,
 				4E63426D1C89199B00F7B643 /* AppDelegate.m in Sources */,
+				4E6342811C8919DB00F7B643 /* NavViewController.m in Sources */,
 				4E63426A1C89199B00F7B643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +160,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4E6342711C89199B00F7B643 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E6342721C89199B00F7B643 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E6342761C89199B00F7B643 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -262,6 +256,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nav/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiying.Nav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nav/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiying.Nav;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -2,11 +2,13 @@
 //  AppDelegate.m
 //  Nav
 //
-//  Created by Macmini on 16/3/4.
-//  Copyright © 2016年 weiying. All rights reserved.
+//  Created by Howe on 16/3/4.
+//  Copyright © 2016年 Howe. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "NavViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,16 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)
+    launchOptions {
+    ViewController *view = [[ViewController alloc]init];
+    NavViewController *navVC = [[NavViewController alloc]initWithRootViewController:view];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = navVC;
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

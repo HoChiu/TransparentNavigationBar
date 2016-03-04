@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NavViewController.h
 //  Nav
 //
 //  Created by Howe on 16/3/4.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface NavViewController : UINavigationController
 
 @end
-
